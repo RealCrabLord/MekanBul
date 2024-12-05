@@ -1,0 +1,14 @@
+const database = 'mekanbul';
+use(database);
+db.venues.updateOne({"name":"SDÜ WPS Starbucks"},
+  {$push: {"comments": 
+    {
+      "_id": ObjectId(),
+      "author": "Güney",
+      "rating": 4,
+      "text": "Kahveler güzel ama pahalı...",
+      "date": new Date()
+    }
+  }
+}
+)

@@ -1,0 +1,34 @@
+const database = 'mekanbul';
+use(database);
+db.venues.insertOne(
+{
+  "name": "SDÜ WPS Starbucks",
+  "address": "Süleyman Demirel Üniversitesi",
+  "rating": 4,
+  "foodanddrink": [
+    "çay",
+    "kahve",
+    "pasta",
+    "kahve",
+    "sandviç"
+  ],
+  "coordinates": [
+    37.831553738256154, 
+    30.526453993254385
+  ],
+  "hours": [
+    {
+      "days": "Pazartesi-Cuma",
+      "open": "10:00",
+      "close": "22:00",
+      "isClosed": false
+    },
+    {
+      "days": "Cumartesi-Pazar",
+      "open": "10:00",
+      "close": "22:00",
+      "isClosed": false
+    }
+  ]
+}
+ );
